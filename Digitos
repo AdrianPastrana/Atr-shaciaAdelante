@@ -1,0 +1,19 @@
+
+package digitos;
+import java.util.Scanner;
+public class Digitos {
+    public static void main(String args[])
+    {
+        Scanner teclado = new Scanner(System.in);
+         String cadena;
+        System.out.println("Ingresa una frase: " );
+        cadena = teclado.nextLine();
+       
+        String [] array=cadena.split(" ");
+        String invertido="";
+        for(int i=array.length-1;i>=0; i--){
+           invertido=invertido+" "+array[i];
+        }
+        System.out.println(invertido);
+    }
+}
